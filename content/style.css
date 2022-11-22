@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    position: relative;
+    width: 100%;
+    min-height: 150vh;
+ }
+
+ .menu{
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transform: ease-in-out 0.5s;
+    /* margin-top: 20px; */
+ }
+
+ .menu.hide{
+   width: 0;
+ }
+
+ .menu ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+ }
+ .menu ul li{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px 0 0 20px ;
+ }
+ .menu ul li i{
+    padding: 20px;
+   font-size: 24px;
+   padding-left: 50px;
+   margin-right: 20px;
+   color: #000;
+ }
+ .menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.842) ;
+    color: #ffff;
+ }
+ .menu ul li i:hover{
+   color: #fff;
+ }
+
+ .menu .item-menu{
+    position: absolute;
+    top: 20px;
+    right: -51px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff ;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: linear 0.2s;
+
+ }
+ .menu .item-menu:hover{
+    background-color: #000;
+    color: #ffff;
+ }
+
+
+
+ .contents{
+    background-color: #fff;
+    position: absolute;
+    top: 25 0px;
+    left: 70px;
+    width: calc(100% - 60px);
+    /* height: 100vh; */
+    z-index: 100;
+ }
+
+ .head{
+    height: 300px;
+    background-image: url(../img/backgroddemo.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+ }
+
+.title{
+    margin: 50px 0;
+    font-size: 34px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #ffff;
+}
+
+.info{
+    display: flex;
+}
+
+.info-img{
+    margin-left: 30px;
+    border-radius: 20px;
+    max-width: 800px;
+}
+
+.formula{
+    width: 400px;
+    background-color: beige;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ingredient{
+    text-align: center;
+    line-height: 40px;
+    padding: 30px 60px;
+    font-size: 20px;
+}
+.guide{
+    margin-top: 100px;
+}
+
+.guide-content{
+    text-align: center;
+
+    padding: 20px 50px;
+    line-height: 30px;
+}
+
+.footer-distributed {
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+    border-radius: 20px;
+}
+
+.footer-distributed .footer-left p {
+	color: #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+
+.footer-distributed p.footer-links {
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+	transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+	display: inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: inherit;
+	transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+	content: "·";
+	font-size: 20px;
+	left: 0;
+	color: #fff;
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+	content: none;
+}
+
+.footer-distributed .footer-right {
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 3px;
+	transition: all .25s;
+}
+
+.footer-distributed .footer-right a:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+	text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right {
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right {
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links {
+		line-height: 1.8;
+	}
+}
